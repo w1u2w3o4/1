@@ -1,0 +1,20 @@
+# Cloudflare Pages redirect rules for SPA routing
+# All non-file requests go to index.html for Vue Router to handle
+
+# Exclude specific paths and file extensions
+/api/* 200
+/*.js 200
+/*.css 200
+/*.png 200
+/*.jpg 200
+/*.jpeg 200
+/*.gif 200
+/*.svg 200
+/*.json 200
+/*.woff 200
+/*.woff2 200
+/*.ttf 200
+/*.eot 200
+
+# Catchall: send all other requests to index.html for Vue Router
+/* /index.html 200

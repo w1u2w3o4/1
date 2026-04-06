@@ -1,0 +1,8 @@
+name = "xyzw-web-helper"
+compatibility_date = "2023-12-01"
+
+[pages_build_config]
+build_command = "corepack enable && pnpm run build"
+build_caching = true
+install_command = "corepack enable && pnpm install"
+destination_dir = "dist"
