@@ -1,0 +1,14 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "1",
+  "compatibility_date": "2026-04-06",
+  "observability": {
+    "enabled": true
+  },
+  "assets": {
+    "directory": "xyzw_web_helper"
+  },
+  "compatibility_flags": [
+    "nodejs_compat"
+  ]
+}
