@@ -8,8 +8,13 @@
     "testr": "node ./test/roleToken.js",
     "testd": "node ./test/token.js",
     "dev": "vite",
+    "dev:frontend": "vite --host 127.0.0.1 --port 5173",
+    "dev:backend": "cd server && python app.py",
+    "dev:all": "sh -c 'pnpm run dev:backend & pnpm run dev:frontend'",
     "build": "vite build",
+    "build:pages": "vite build && cp worker.js dist/_worker.js",
     "preview": "vite preview",
+    "preview:pages": "pnpm run build:pages && pnpm exec wrangler pages dev dist",
     "lint": "eslint src --ext .vue,.js,.ts --fix",
     "format": "prettier --write \"src/**/*.{js,vue,ts,css,scss}\""
   },
